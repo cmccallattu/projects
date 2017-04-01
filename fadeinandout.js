@@ -6,3 +6,9 @@ $(document).ready(function() {
         $('div').fadeTo('fast', 0.5);
     });
 });
+
+$(document).ready(function() {
+    $('div').click(function() {
+        $('div').fadeOut('slow');
+    });
+});
