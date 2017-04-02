@@ -23,5 +23,25 @@
         $("h2").addClass("crocodile");
         $("a").attr("href", "https://en.wikipedia.org/wiki/Crocodile");
         $("img").attr("src", "https://www.kasandbox.org/programming-images/animals/crocodiles.png");
-        </script>
+     </script>
+    
+    
+    <script>
+     // for loop
+        var $paragraphs = $('p');
+        for (var i = 0; i < $paragraphs.length; i++) {
+            var element = $paragraphs[i]; // DOM node
+            var $paragraph = $(element);
+            $paragraph.html( $paragraph.html() + "..huzzah!");
+        }
+        
+        // each()
+        $paragraphs.each(function(index, element) {
+            var $paragraph = $(this);
+            console.log(element === this);
+            $paragraph.html( $paragraph.html() + "..wowee!");
+        });
+    </script>
+    
+    
 </html>
