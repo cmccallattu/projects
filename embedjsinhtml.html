@@ -55,5 +55,18 @@
             .appendTo("body");
     </script>
     
+    <script>
+        //add dot when you click
+        <script>
+    $("#dog-pic").on("click", function(event) {
+        var $dot = $("<div></div>");
+        $dot.addClass("dot")
+        .css("position", "absolute")
+        .css("top", event.pageY + "px")
+        .css("left", event.pageX + "px")
+        $dot.appendTo("body");
+    });
+    </script>
+    
     
 </html>
