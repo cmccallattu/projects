@@ -29,3 +29,9 @@ group by category;
 
 select name, category, min(downloads) from fake_apps //similar to MAX method except MIN method returns smallest downloads values
 group by category;
+
+select price, avg(downloads) from fake_apps  //AVG method
+group by price;
+
+select price, round(avg(downloads), 2) from fake_apps //ROUND method to two places
+group by price;
