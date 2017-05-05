@@ -10,3 +10,7 @@ or year < 1980;  // OR method
 
 select * from movies
 order by imdb_rating desc;  // ORDER BY method with DESC parameter
+
+select * from movies
+order by imdb_rating asc
+limit 3;  //  LIMIT method to reduce return of query to 3
