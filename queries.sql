@@ -9,4 +9,4 @@ where genre = 'comedy'
 or year < 1980;  // OR method
 
 select * from movies
-order by imdb_rating desc; 
+order by imdb_rating desc;  // ORDER BY method with DESC parameter
